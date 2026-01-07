@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 
 mongoose
   .connect(process.env.MONGO_URL, {
-    dbName: "NodeJs_Mastery_Course",
+    dbName: "contact_api",
   })
   .then(() => console.log("MongoDb Connected..!"))
   .catch((err) => console.log(err));
